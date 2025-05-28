@@ -1,0 +1,214 @@
+/* Page Header */
+.page-header {
+    background-color: #f2f2f2;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Reviews Page */
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #007aff;
+    color: #fff;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.rating {
+    padding: 0 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars {
+    color: #f8b400;
+}
+
+.score {
+    font-weight: 500;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.pagination a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    transition: all 0.3s ease;
+}
+
+.pagination a.active,
+.pagination a:hover {
+    background-color: #007aff;
+    color: #fff;
+}
+
+.pagination a.next {
+    width: auto;
+    padding: 0 15px;
+    border-radius: 20px;
+}
+
+/* Tips & Tricks Page */
+.tips-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tip-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+
+.tip-image {
+    flex: 0 0 300px;
+    overflow: hidden;
+}
+
+.tip-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover .tip-image img {
+    transform: scale(1.05);
+}
+
+.tip-content {
+    flex: 1;
+    padding: 25px;
+}
+
+.tip-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.tip-meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.category {
+    color: #007aff;
+    font-weight: 500;
+}
+
+.popular-topics ul {
+    list-style: none;
+}
+
+.popular-topics ul li {
+    margin-bottom: 12px;
+}
+
+.popular-topics ul li a {
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    transition: color 0.3s ease;
+}
+
+.popular-topics ul li a:hover {
+    color: #007aff;
+}
+
+/* Compare Gadgets Page */
+.category-selector {
+    margin-bottom: 30px;
+}
+
+.category-selector label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.category-selector select {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.comparison-table-container {
+    margin-bottom: 40px;
+    overflow-x: auto;
+}
+
+.comparison-table-container h2 {
+    margin-bottom: 20px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.comparison-table th {
+    background-color: #f8f8f8;
+}
