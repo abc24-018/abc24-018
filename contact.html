@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tech Gadget Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Tech Gadget Blog</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="tips.html">Tips & Tricks</a></li>
+                    <li><a href="compare.html">Compare Gadgets</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header" style="background: url('contact_page.jpg') center/cover no-repeat;">
+        <div class="container">
+            <h1 style="color: white; text-shadow: 5px 5px 10px black; text-align: center;">Contact Us</h1>
+            <p style="color: white; text-shadow: 5px 5px 10px black; text-align: center;">Get in touch with our team of tech enthusiasts</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <div class="contact-section">
+                <div class="contact-info">
+                    <h2>Ways to Connect</h2>
+                    <p>We'd love to hear from you! Whether you have a question about a product, want to suggest a gadget for review, or are interested in collaboration opportunities, please reach out using one of the methods below:</p>
+                    
+                    <div class="contact-methods"><br>
+                        <div class="contact-method">
+                            <div class="icon">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="details">
+                                <h3>Email Us</h3>
+                                <p>contact@techgadgetblog.com</p>
+                                <p>For business inquiries: business@techgadgetblog.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method"><br>
+                            <div class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="details">
+                                <h3>Call Us</h3>
+                                <p>General Inquiries: (555) 123-4567</p>
+                                <p>Available Mon-Fri, 9AM - 5PM EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method"><br>
+                            <div class="icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="details">
+                                <h3>Social Media</h3>
+                                <p>Follow us on social media for the latest updates!</p><br>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <div class="col-25">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="col-75">
+                            <input type="text" id="name" name="name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-25">
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-25">
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="subject" name="subject">
+                                    <option value="general">General Inquiry</option>
+                                    <option value="review-request">Review Request</option>
+                                    <option value="tip-suggestion">Tip Suggestion</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="business">Business Opportunity</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-25">
+                                <label for="message">Your Message</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter</label>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Thank You!</h3>
+                        <p>Your message has been sent successfully. We'll get back to you as soon as possible.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>How can I suggest a product for review?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>We welcome product suggestions! You can use our contact form above and select "Review Request" as the subject. Please include as much information about the product as possible, including why you think it would be interesting for our readers.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Do you accept guest posts?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes, we occasionally accept high-quality guest posts from tech experts and enthusiasts. Please email us with your proposal including your experience, topic ideas, and writing samples. All guest content must be original and not published elsewhere.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>How often do you publish new content?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>We publish new reviews every Tuesday and Thursday, and fresh tips & tricks content every Monday and Wednesday. For breaking tech news and announcements, we cover those as they happen.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Do you offer advertising opportunities?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes, we offer various advertising options for brands and products that align with our audience's interests. Please email business@techgadgetblog.com for our media kit and pricing information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Tech Gadget Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Contact form submission
+            const contactForm = document.getElementById('contactForm');
+            const formSuccess = document.getElementById('formSuccess');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // In a real implementation, you would send form data to a server here
+                    // This is just a simulation for the demo
+                    setTimeout(() => {
+                        contactForm.style.display = 'none';
+                        formSuccess.style.display = 'block';
+                    }, 800);
+                });
+            }
+            
+            // FAQ accordion
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                const content = item.querySelector('.accordion-content');
+                const toggleIcon = item.querySelector('.toggle-icon');
+                
+                header.addEventListener('click', () => {
+                    // Close all other accordion items
+                    accordionItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.accordion-content').style.maxHeight = null;
+                            otherItem.querySelector('.toggle-icon').textContent = '+';
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                    
+                    if (item.classList.contains('active')) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        toggleIcon.textContent = '−';
+                    } else {
+                        content.style.maxHeight = null;
+                        toggleIcon.textContent = '+';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
